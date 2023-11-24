@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/jimmyjack/static/css/main.3c3344ca.css",
-    "main.js": "/jimmyjack/static/js/main.04aa7141.js",
+    "main.js": "/jimmyjack/static/js/main.05aeefdc.js",
     "static/media/f-2.png": "/jimmyjack/static/media/f-2.4a0b6f35285489fe4783.png",
     "static/media/f-1.png": "/jimmyjack/static/media/f-1.3b680e36faedee8256ef.png",
     "static/media/logo.png": "/jimmyjack/static/media/logo.a897d968e603a0c90695.png",
     "static/media/a-1.jpg": "/jimmyjack/static/media/a-1.43939c8b462290305055.jpg",
+    "static/media/footer-logo.png": "/jimmyjack/static/media/footer-logo.7e7a15b02cb63b3eec23.png",
     "static/media/a-36.jpg": "/jimmyjack/static/media/a-36.86db2c3505a063b103c7.jpg",
-    "static/media/logo-white.svg": "/jimmyjack/static/media/logo-white.9c38c3286a03521af2957caff25a55c8.svg",
     "index.html": "/jimmyjack/index.html",
     "static/media/send-outline.svg": "/jimmyjack/static/media/send-outline.72c31f9e911ecf48a3e7df9730dd0836.svg",
     "static/media/chevron-down-outline.svg": "/jimmyjack/static/media/chevron-down-outline.39762c975829505473809b104f26847f.svg",
     "main.3c3344ca.css.map": "/jimmyjack/static/css/main.3c3344ca.css.map",
-    "main.04aa7141.js.map": "/jimmyjack/static/js/main.04aa7141.js.map"
+    "main.05aeefdc.js.map": "/jimmyjack/static/js/main.05aeefdc.js.map"
   },
   "entrypoints": [
     "static/css/main.3c3344ca.css",
-    "static/js/main.04aa7141.js"
+    "static/js/main.05aeefdc.js"
   ]
 }

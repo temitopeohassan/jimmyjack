@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../../assets/assets/images/logo.svg';
+import Logo from '../../assets/assets/images/png/brands/logo.png';
 import '../../assets/assets/css/vendor/bootstrap.min.css';
 import '../../assets/assets/css/core.css';
 import '../../assets/assets/css/main.css';

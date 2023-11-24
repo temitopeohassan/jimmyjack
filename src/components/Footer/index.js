@@ -19,10 +19,10 @@ function Footer() {
             <div className="col-12 col-md-6 col-lg-3">
               <div className="footer-item">
                
-                <Link to="default.htm" className="footer-brand">
+                <Link to="/" className="footer-brand">
                  
                   <img src= {Logo} alt="Shock Theme" className="logo" />
-                  <span className="logo-after-text">SHOCK</span>
+                  <span className="logo-after-text">JIMMY JACK</span>
                 </Link>
            
                 <div className="footer-text">

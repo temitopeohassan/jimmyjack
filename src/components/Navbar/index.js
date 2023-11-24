@@ -24,7 +24,7 @@ function Navbar() {
 
         <Link className="navbar-brand" to="/">
 
-          <img src={Logo} alt="Shock Theme" className="logo main-logo" />
+          <img src={Logo} alt="Jimmy Jack" className="logo main-logo" height={109} />
           <span className="logo-after-text">JIMMY JACK</span>
         </Link>
 

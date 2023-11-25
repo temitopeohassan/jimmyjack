@@ -27,7 +27,7 @@ function Footer() {
                 </Link>
            
                 <div className="footer-text">
-                  <p>Shock is a creative multipurpose theme for building websites.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod tellus accumsan magna elementum, eget sollicitudin tellus hendrerit. In velit lorem, pretium vel eros eu, aliquam venenatis turpis. Curabitur rutrum turpis a mauris vulputate vestibulum. Vestibulum tincidunt, felis nec facilisis gravida, quam lacus viverra leo, quis auctor felis purus eget ligula.</p>
                 </div>
               </div>
               <div className="footer-item">

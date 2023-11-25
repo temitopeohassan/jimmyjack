@@ -1,63 +1,75 @@
 import React, { useState } from 'react';
 import Logo from '../../assets/assets/images/png/brands/logo.png';
-import '../../assets/assets/css/vendor/bootstrap.min.css';
-import '../../assets/assets/css/core.css';
-import '../../assets/assets/css/main.css';
-import '../../assets/assets/css/theme.css';
-import { Link } from 'react-router-dom';
-import Icon1 from '../../assets/assets/svg/send-outline.svg';
-import Chevron from '../../assets/assets/svg/chevron-down-outline.svg'
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import "../../App.css";
+import {
+  Nav,
+  NavContainer,
+  NavLogo,
+  NavItem,
+  NavLinks,
+  NavMenu,
+  MobileIcon,
+} from "./NavbarElements";
 
 function Navbar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
+  
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+      if (window.scrollY >= 100) {
+          setColorchange(true);
+      } else {
+          setColorchange(false);
+      }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
 
   return (
     <>
-      <header id="header" className="shock-header">
+      <IconContext.Provider value={{ color: '#000' }}>
+    <Nav className={
+        colorChange
+            ? "navbar colorChange"
+            : "navbar"
+    }>
+  <NavContainer style={{ color: 'transparent' }}>
+  <NavLogo to='/' > 
+    <img src={Logo} alt='JJTS & Co' />
+    </NavLogo>
+    <MobileIcon onClick={handleClick}>
+      {click ? <FaTimes /> : <FaBars />}
+    </MobileIcon>
+    <NavMenu onClick={handleClick} click={click}>
+    
+      <NavItem>
+    <NavLinks to='/'onClick={closeMobileMenu}>Home</NavLinks>
+    </NavItem>
 
-<nav id="navbar" className="navbar navbar-expand-lg smart-scroll hover-line-left scheme-2 primary">
-      <div className="container">
+    <NavItem>
+    <NavLinks to='/about'onClick={closeMobileMenu}>About JJTS & Co</NavLinks>
+    </NavItem>
 
-        <Link className="navbar-brand" to="/">
+    <NavItem>
+    <NavLinks to='/shop'onClick={closeMobileMenu}> Shop Jimmy Jack</NavLinks>
+    </NavItem>
+  
 
-          <img src={Logo} alt="Jimmy Jack" className="logo main-logo" height={109} />
-          <span className="logo-after-text">JIMMY JACK</span>
-        </Link>
+    <NavItem>
+    <NavLinks to='/contact'onClick={closeMobileMenu}>Contact</NavLinks>
+    </NavItem>
 
-        <button className="navbar-toggler" data-bs-target="#navbar-items" data-bs-toggle="collapse" aria-expanded="false">
-          <span className="navbar-toggler-icon">
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-          </span>
-        </button>
-
-        <div id="navbar-items" className="collapse navbar-collapse focus-trigger">
-
-          <div className="search-bar navbar-collapse-form">
-            <div className="form-area d-only-mobile d-none scheme-1">
-              <form className="form-fields needs-validation" novalidate="novalidate">
-                <div className="form-row row has-icon">
-                  <div className="form-col mb-0 form-floating">
-                    <button className="button overlay-button"><img className="overlay-image-icon" src={Icon1} alt="Icon one" data-shock-icon="32" /></button>
-                    <input id="InputSearchMobile" className="form-control focus-trigger-field" name="InputSearchMobile" placeholder="Type keywords..." required="required" />
-                    <label for="InputSearchMobile" className="form-label">Type keywords...</label>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-
-       
+    </NavMenu>
+   
+  </NavContainer>
  
-        </div>
-      </div>
-    </nav>
-  </header>
+</Nav>
+</IconContext.Provider>
+ 
     </>
   );
 }

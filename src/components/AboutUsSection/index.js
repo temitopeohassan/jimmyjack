@@ -6,7 +6,7 @@ import '../../assets/assets/css/core.css';
 import '../../assets/assets/css/main.css';
 import '../../assets/assets/css/theme.css';
 import { Link } from 'react-router-dom';
-import Image from '../../assets/assets/images/jpg/a-36.jpg';
+import Image from '../../assets/assets/images/jpg/a-36-2.jpg';
 import Slide2 from '../../assets/assets/images/png/f-1.png';
 
 const AboutUsSection = () => {
@@ -17,7 +17,7 @@ const AboutUsSection = () => {
     return (
      <>
         
-        <section className="shock-section has-overlay bg-image bg-fixed" data-bg-image="assets/images/jpg/a-36-2.jpg">
+        <section className="shock-section has-overlay bg-image bg-fixed" style={{ backgroundImage: `url(${Image})` }}>
         <div className="container">
           <div className="holder vh-75 align-v-center">
 
@@ -30,7 +30,7 @@ const AboutUsSection = () => {
                   </h2>
                   <span className="text-2 text-style-4 fw-300 text-outline text-italic black">turning ideas into results.</span>
                   <div className="description text-style-12 black-65">
-                    <p>To connect the brand with the target audience, it is necessary to observe every detail to compose a subconscious message.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod tellus accumsan magna elementum, eget sollicitudin tellus hendrerit. In velit lorem, pretium vel eros eu, aliquam venenatis turpis.</p>
                   </div>                  
                 </div>
                 <div className="right-column">

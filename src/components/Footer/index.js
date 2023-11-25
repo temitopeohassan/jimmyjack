@@ -6,6 +6,7 @@ import '../../assets/assets/css/vendor/bootstrap.min.css';
 import '../../assets/assets/css/core.css';
 import '../../assets/assets/css/main.css';
 import '../../assets/assets/css/theme.css';
+import  Submit from '../../assets/assets/svg/send-outline.svg';
 
 
 function Footer() {
@@ -48,45 +49,33 @@ function Footer() {
               <div className="footer-item">
               
                 
-                <div className="hover-up-down">
-                  <Link to="tel_3A+19912345678" className="button outline rounded gray primary-hover">
-                    <i className="fa-solid fa-phone button-icon left-icon gray white-hover"></i>
-                    <span className="button-text gray white-hover">+1 (99) 1234 5678</span>
-                  </Link>
-                </div>
+              
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-3">
               <div className="footer-item">
-                <h6 className="title">Quick Links</h6>
+                <h6 className="title">Menu</h6>
                
                 <ul className="nav-list list-unstyled">
                   <li className="nav-item">
-                    <Link to="#" className="nav-link">
-                      <span className="text">Photography</span>
+                    <Link to="/" className="nav-link">
+                      <span className="text">Home</span>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="#" className="nav-link">
-                      <span className="text">Art Direction</span>
-                      <span className="badge flex ms-1 primary primary-hover">
-                        <span className="badge-text white white-hover">New</span>
-                      </span>
+                    <Link to="/about" className="nav-link">
+                      <span className="text">About JJTS & Co</span>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="#" className="nav-link">
-                      <span className="text">Graphic Design</span>
+                    <Link to="/shop" className="nav-link">
+                      <span className="text">Shop Jimmy Jack</span>
                     </Link>
                   </li>
+             
                   <li className="nav-item">
-                    <Link to="#" className="nav-link">
-                      <span className="text">Brand Creation</span>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="#" className="nav-link">
-                      <span className="text">Social Media</span>
+                    <Link to="/contact" className="nav-link">
+                      <span className="text">Contact Us</span>
                     </Link>
                   </li>
                 </ul>
@@ -94,7 +83,7 @@ function Footer() {
             </div>
             <div className="col-12 col-md-6 col-lg-3">
               <div className="footer-item">
-                <h6 className="title">Popular Searches</h6>
+                <h6 className="title">Categories</h6>
                 
                 
                 <div className="tag-cloud">
@@ -191,14 +180,13 @@ function Footer() {
                   <form action="php/sender.php" className="form-fields needs-validation ajax-form" novalidate="novalidate">
                     <div className="form-row row has-icon">
                       <div className="form-col form-floating">
-                        <button className="button overlay-button"><img className="overlay-image-icon" src="assets/svg/send-outline.svg" alt="Icon name" data-shock-icon="32" /></button>
+                        <button className="button overlay-button"><img className="overlay-image-icon" src={Submit} alt="Icon name" data-shock-icon="32" /></button>
                         <input type="email" name="email" id="InputFloatingFooter" className="form-control focus-trigger-field" placeholder="Type your email..." required="required" />
                         <label for="InputFloatingFooter" className="form-label">Type your email...</label>
                       </div>
                     </div>
                     <input type="hidden" name="subject" value="Message sent through the contact form." />
-                    <span className="form-alert success">Your message was sent successful. Thanks.</span>
-                    <span className="form-alert error">Sorry. We were unable to send your message.</span>
+                   
                   </form>
                 </div>
               </div>
@@ -207,7 +195,7 @@ function Footer() {
         </div>
       </div>
       <div className="bottom-bar">
-        <div className="text">© 2023 - All rights reserved.</div>
+        <div className="text">© 2023 JJTS & Co - All rights reserved.</div>
       </div>
     </footer>
    </>
